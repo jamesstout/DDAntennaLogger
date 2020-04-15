@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DDAntennaLogger"
-  s.version      = "1.0.1"
+  s.version      = "2.0.0"
   s.summary      = "A custom CocoaLumberjack logger for remote logging through Antenna"
 
   s.description  = <<-DESC
@@ -17,10 +17,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Giovanni Lodi" => "giovanni.lodi42@gmail.com" }
   s.social_media_url   = "http://twitter.com/mokagio"
-  s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/mokagio/DDAntennaLogger.git", :tag => s.version }
+  s.platform     = :ios, "10.0"
+  s.source       = { :git => "https://github.com/jamesstout/DDAntennaLogger.git", :tag => s.version }
   s.source_files  = "DDAntennaLogger"
   s.requires_arc = true
-  s.dependency "Antenna", "~> 2.0"
-  s.dependency "CocoaLumberjack", "~> 2.0"
+  s.dependency "Antenna", "~> 3.0.0"
+  s.dependency "CocoaLumberjack", "~> 3.6.1"
 end
