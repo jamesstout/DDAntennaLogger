@@ -1,27 +1,21 @@
 PODS:
-  - AFNetworking (2.6.2):
-    - AFNetworking/NSURLConnection (= 2.6.2)
-    - AFNetworking/NSURLSession (= 2.6.2)
-    - AFNetworking/Reachability (= 2.6.2)
-    - AFNetworking/Security (= 2.6.2)
-    - AFNetworking/Serialization (= 2.6.2)
-    - AFNetworking/UIKit (= 2.6.2)
-  - AFNetworking/NSURLConnection (2.6.2):
+  - AFNetworking (4.0.0):
+    - AFNetworking/NSURLSession (= 4.0.0)
+    - AFNetworking/Reachability (= 4.0.0)
+    - AFNetworking/Security (= 4.0.0)
+    - AFNetworking/Serialization (= 4.0.0)
+    - AFNetworking/UIKit (= 4.0.0)
+  - AFNetworking/NSURLSession (4.0.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.2):
-    - AFNetworking/Reachability
-    - AFNetworking/Security
-    - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.2)
-  - AFNetworking/Security (2.6.2)
-  - AFNetworking/Serialization (2.6.2)
-  - AFNetworking/UIKit (2.6.2):
-    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (4.0.0)
+  - AFNetworking/Security (4.0.0)
+  - AFNetworking/Serialization (4.0.0)
+  - AFNetworking/UIKit (4.0.0):
     - AFNetworking/NSURLSession
-  - Antenna (2.0.1):
-    - AFNetworking (~> 2.4)
+  - Antenna (3.0.0):
+    - AFNetworking (~> 4.0)
   - CocoaLumberjack (2.2.0):
     - CocoaLumberjack/Default (= 2.2.0)
     - CocoaLumberjack/Extensions (= 2.2.0)
@@ -32,12 +26,29 @@ PODS:
     - CocoaLumberjack/Default
 
 DEPENDENCIES:
-  - Antenna (= 2.0.1)
+  - Antenna (from `https://github.com/jamesstout/Antenna.git`, tag `3.0.0`)
   - CocoaLumberjack (= 2.2.0)
 
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  Antenna:
+    :git: https://github.com/jamesstout/Antenna.git
+    :tag: 3.0.0
+
+CHECKOUT OPTIONS:
+  Antenna:
+    :git: https://github.com/jamesstout/Antenna.git
+    :tag: 3.0.0
+
 SPEC CHECKSUMS:
-  AFNetworking: 7f317038a9710cabfa43ec56396b307b45df72ab
-  Antenna: 3b540bbf07c32ad13c40d355ca19c4c6ea27feb5
+  AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
+  Antenna: 93f603c23a516f65759c98ac84a40cb23c1fa6a7
   CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: e53f5c28c6eb1207cfe70403f96957e5660a66e5
+
+COCOAPODS: 1.9.1

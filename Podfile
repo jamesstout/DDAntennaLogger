@@ -1,8 +1,9 @@
+platform :ios, '10.0'
 workspace "DDAntennaLogger"
 
-xcodeproj "Example/Example.xcodeproj"
+project "Example/Example.xcodeproj"
 target :Example do
-  pod "Antenna", "2.0.1"
+  pod 'Antenna', :git => 'https://github.com/jamesstout/Antenna.git', :tag => '3.0.0'
   pod "CocoaLumberjack", "2.2.0"
 end
 
