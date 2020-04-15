@@ -1,11 +1,9 @@
 #import "AppDelegate.h"
 
-// CocoaLumberjack
-#import <DDLog.h>
-#import <DDASLLogger.h>
-#import <DDTTYLogger.h>
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
+// CocoaLumberjack
+#import "CocoaLumberjack.h"
+static const int ddLogLevel = DDLogFlagInfo;
 // Antenna
 #import <Antenna.h>
 
@@ -16,10 +14,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
     // Antenna setup
-    [[Antenna sharedLogger] addChannelWithURL:[NSURL URLWithString:@"http://example.com"] method:@"LOG"];
+    [[Antenna sharedLogger] addChannelWithURL:[NSURL URLWithString:@"http://localhost:12345/log"] method:@"POST"];
     [[Antenna sharedLogger] startLoggingApplicationLifecycleNotifications];
 
     // CocoaLumberjack setup
@@ -30,10 +27,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
     DDAntennaLogger *logger = [[DDAntennaLogger alloc] initWithAntenna:[Antenna sharedLogger]];
     [DDLog addLogger:logger];
 
-    DDLogInfo(@"DDAntennaLogger is cool!");
-
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    DDLogInfo(@"INFO DDAntennaLogger is cool!");
+    DDLogVerbose(@"VERB DDAntennaLogger is cool!");
+    DDLogDebug(@"DEBUG DDAntennaLogger is cool!");
 
     return YES;
 }
