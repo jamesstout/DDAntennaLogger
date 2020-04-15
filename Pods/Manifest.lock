@@ -16,18 +16,13 @@ PODS:
     - AFNetworking/NSURLSession
   - Antenna (3.0.0):
     - AFNetworking (~> 4.0)
-  - CocoaLumberjack (2.2.0):
-    - CocoaLumberjack/Default (= 2.2.0)
-    - CocoaLumberjack/Extensions (= 2.2.0)
-  - CocoaLumberjack/Core (2.2.0)
-  - CocoaLumberjack/Default (2.2.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.2.0):
-    - CocoaLumberjack/Default
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
 
 DEPENDENCIES:
   - Antenna (from `https://github.com/jamesstout/Antenna.git`, tag `3.0.0`)
-  - CocoaLumberjack (= 2.2.0)
+  - CocoaLumberjack (~> 3.6.1)
 
 SPEC REPOS:
   trunk:
@@ -47,8 +42,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: d9fdf484a3c723ec3c558a41cc5754c7e845ee77
   Antenna: 93f603c23a516f65759c98ac84a40cb23c1fa6a7
-  CocoaLumberjack: 17fe8581f84914d5d7e6360f7c70022b173c3ae0
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
 
-PODFILE CHECKSUM: e53f5c28c6eb1207cfe70403f96957e5660a66e5
+PODFILE CHECKSUM: cbfe35314c3b137f196b82ea0c0165be2e47a822
 
 COCOAPODS: 1.9.1

@@ -20,8 +20,7 @@ static const int ddLogLevel = DDLogFlagInfo;
     [[Antenna sharedLogger] startLoggingApplicationLifecycleNotifications];
 
     // CocoaLumberjack setup
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    [DDLog addLogger:[DDOSLogger sharedInstance]];
 
     // Antenna-CocoaLumberjack setup
     DDAntennaLogger *logger = [[DDAntennaLogger alloc] initWithAntenna:[Antenna sharedLogger]];
